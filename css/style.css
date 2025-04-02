@@ -136,6 +136,8 @@ nav ul li a:hover::after {
   align-items: center;
   padding-top: 80px;
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  padding: 80px 5% 0; /* Added horizontal padding */
+  overflow: hidden; /* Prevent any overflow */
 }
 
 .hero-content {
