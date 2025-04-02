@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Kamole Mutua | Front-end Engineer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <header class="glass-nav">
+      <div class="container">
+        <div class="logo">VKM</div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1 class="animate-fade-in">Victor Kamole Mutua</h1>
+          <p class="subtitle animate-fade-in-delay">
+            Front-end Software Engineer | 3+ Years Experience
+          </p>
+          <div class="social-links animate-fade-in-delay-2">
+            <a href="https://github.com/vkamole" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://instagram.com/victormutua_" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="mailto:victorkamole@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+          <a href="#contact" class="btn btn-primary animate-fade-in-delay-3"
+            >Get In Touch</a
+          >
+        </div>
+        <div class="hero-image">
+          <div class="profile-image"></div>
+          <div class="decorative-shapes">
+            <div class="circle"></div>
+            <div class="square"></div>
+            <div class="triangle"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-grid">
+            <div class="about-card">
+              <i class="fas fa-briefcase"></i>
+              <h3>Experience</h3>
+              <p>
+                3+ years as a Front-end Software Engineer at Innovex Solutions
+                Kenya. Led the e-health project team, delivering innovative
+                healthcare solutions.
+              </p>
+            </div>
+            <div class="about-card">
+              <i class="fas fa-graduation-cap"></i>
+              <h3>Education</h3>
+              <p>
+                Bachelor's Degree in Computer Science with a focus on software
+                development and user experience design.
+              </p>
+            </div>
+            <div class="about-card">
+              <i class="fas fa-code"></i>
+              <h3>Skills</h3>
+              <p>
+                HTML5, CSS3, JavaScript (ES6+), React, Vue.js, Responsive
+                Design, UI/UX Principles
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2>Featured Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div
+                class="project-image"
+                style="background-image: url('images/projects/project1.jpg')"
+              ></div>
+              <div class="project-content">
+                <h3>E-Health Platform</h3>
+                <p>
+                  Led development of a comprehensive healthcare management
+                  system for Innovex Solutions.
+                </p>
+                <a href="#" class="btn btn-outline">View Details</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div
+                class="project-image"
+                style="background-image: url('images/projects/project2.jpg')"
+              ></div>
+              <div class="project-content">
+                <h3>Patient Portal</h3>
+                <p>
+                  Developed a patient-facing portal for medical records and
+                  appointment scheduling.
+                </p>
+                <a href="#" class="btn btn-outline">View Details</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div
+                class="project-image"
+                style="background-image: url('images/projects/project3.jpg')"
+              ></div>
+              <div class="project-content">
+                <h3>Telemedicine App</h3>
+                <p>
+                  Created a video consultation platform integrated with the
+                  e-health ecosystem.
+                </p>
+                <a href="#" class="btn btn-outline">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Get In Touch</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <p><i class="fas fa-envelope"></i> victorkamole@gmail.com</p>
+              <div class="contact-social">
+                <a href="https://github.com/vkamole" target="_blank"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="https://instagram.com/victormutua_" target="_blank"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </div>
+            </div>
+            <div class="appointment-form">
+              <h3>Book an Appointment</h3>
+              <form id="appointmentForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input type="date" id="date" required />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    placeholder="What would you like to discuss?"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Schedule Meeting
+                </button>
+              </form>
+              <div
+                id="formSuccess"
+                class="success-message"
+                style="display: none"
+              >
+                Your appointment request has been submitted successfully!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Victor Kamole Mutua. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/db.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
