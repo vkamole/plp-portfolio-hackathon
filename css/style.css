@@ -149,6 +149,13 @@ nav ul li a:hover::after {
   font-size: 1.5rem;
 }
 
+a[target="_blank"]::after {
+  content: " ↗";
+  display: inline-block;
+  margin-left: 2px;
+  text-decoration: none;
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -543,4 +550,46 @@ footer {
   .hero-image {
     height: 300px;
   }
+}
+
+/* Tech Stack Badges */
+.tech-stack {
+  display: flex;
+  gap: 8px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.badge.nextjs {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+}
+
+.badge.nodejs {
+  background-color: #339933;
+}
+
+.badge.typescript {
+  background-color: #3178c6;
+}
+
+.badge.html {
+  background-color: #e34f26;
+}
+
+.badge.css {
+  background-color: #1572b6;
+}
+
+.badge.js {
+  background-color: #f7df1e;
+  color: black;
 }
